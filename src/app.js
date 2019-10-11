@@ -1,10 +1,17 @@
 require('dotenv').config();
+
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
 const { NODE_ENV } = require('./config')
-
+const userRouter = require('./users/users-router')
+const exerciseRouter = require('./exercises/exercises-router')
+const authRouter = require('./auth/auth-router')
+const weeksRouter = require('./weeks/weeks_route')
+const weightsRouter = require('./saveWeights/weights-router')
+const muscleGroupRouter = require('./muscleGroup/muscleGroup-router')
+const customListRouter = require('./custom_list/customList-router')
 
 const app = express();
 
@@ -17,8 +24,16 @@ app.use(helmet());
 app.use(cors());
 
 app.get('/', (req, res) => {
-     res.send('Hello, world!')
-  })
+  res.send('Hello, world!')
+})
+
+app.use('/api/users', userRouter)
+app.use('/api/exerciselist', exerciseRouter)
+app.use('/api/login', authRouter)
+app.use('/api/weeks', weeksRouter)
+app.use('/api/insertweights', weightsRouter)
+app.use('/api/musclegroup', muscleGroupRouter)
+app.use('/api/customlist', customListRouter)
 
 app.use(function errorHandler(error, req, res, next) {
     let response
