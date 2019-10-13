@@ -1,20 +1,20 @@
 begin;
 
--- insert into muscle_group_table (muscle_name)
---   VALUES
---     ('Back'), 
---     ('Quads'), 
---     ('Biceps'), 
---     ('Triceps'), 
---     ('Chest'), 
---     ('Shoulders'), 
---     ('Calfs'), 
---     ('Abs'), 
---     ('Lats'), 
---     ('Deltoids'),
---     ('Hamstrings'),
---     ('traps'),
---     ('rest');
+insert into muscle_group_table (muscle_name)
+  VALUES
+    ('Back'), 
+    ('Quads'), 
+    ('Biceps'), 
+    ('Triceps'), 
+    ('Chest'), 
+    ('Shoulders'), 
+    ('Calfs'), 
+    ('Abs'), 
+    ('Lats'), 
+    ('Deltoids'),
+    ('Hamstrings'),
+    ('traps'),
+    ('rest');
 
 insert into exercises_table (exercise_name, exercise_how_to, muscle_group_id, video)
   VALUES 
