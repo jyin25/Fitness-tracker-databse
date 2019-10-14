@@ -2,19 +2,19 @@ begin;
 
 insert into muscle_group_table (muscle_name)
   VALUES
-    ('Back'), 
-    ('Quads'), 
-    ('Biceps'), 
-    ('Triceps'), 
-    ('Chest'), 
-    ('Shoulders'), 
-    ('Calfs'), 
-    ('Abs'), 
-    ('Lats'), 
-    ('Deltoids'),
-    ('Hamstrings'),
-    ('traps'),
-    ('rest');
+    ('Back', 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-7.gif'), 
+    ('Quads', 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-15.gif'), 
+    ('Biceps', 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-10.gif'), 
+    ('Triceps', 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-1.gif'), 
+    ('Chest', 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-12.gif'), 
+    ('Shoulders', 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-12.gif'), 
+    ('Calfs', 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-9.gif'), 
+    ('Abs', 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-13.gif'), 
+    ('Lats', 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-3.gif'), 
+    ('Glutes', 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-14.gif'),
+    ('Hamstrings', 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-8.gif'),
+    ('traps', 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-11.gif'),
+    ('rest', '');
 
 insert into exercises_table (exercise_name, exercise_how_to, muscle_group_id, video)
   VALUES 
