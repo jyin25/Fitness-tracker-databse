@@ -34,24 +34,21 @@ userRouter
 
     const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
-    const firstMondayExercises = [51, 53, 54, 41, 42, 81, 82]
-    const firstTuesdayExercises = [62, 63, 64, 21, 111, 22, 71, 72]
-    const firstWednesdayExercises = [12, 11, 13, 122, 31, 32, 33]
-    const firstThursdayExercises = [131]
-    const firstFridayExercises = [55, 56, 43, 44, 83, 84]
-    const firstSaturdayExercises = [65, 66, 61, 23, 112, 71, 72]
-    const firstSundayExercises = [91, 92, 93, 121, 34, 35]
-<<<<<<< HEAD
-=======
-
-    // const firstMondayExercises = [1, 3, 4, 5, 6, 7, 8]
-    // const firstTuesdayExercises = [9, 10, 11, 12, 13, 14, 15, 16]
-    // const firstWednesdayExercises = [32, 33, 34, 35, 36, 37, 38]
+    // const firstMondayExercises = [51, 53, 54, 41, 42, 81, 82]
+    // const firstTuesdayExercises = [62, 63, 64, 21, 111, 22, 71, 72]
+    // const firstWednesdayExercises = [12, 11, 13, 122, 31, 32, 33]
     // const firstThursdayExercises = [131]
-    // const firstFridayExercises = [17, 18, 19, 20, 21, 22]
-    // const firstSaturdayExercises = [24, 25, 9, 26, 27, 15, 16]
-    // const firstSundayExercises = [28, 29, 30, 31, 39, 40]
->>>>>>> 3cd06f0c135e386d608eec9d6ae173cb1340106b
+    // const firstFridayExercises = [55, 56, 43, 44, 83, 84]
+    // const firstSaturdayExercises = [65, 66, 61, 23, 112, 71, 72]
+    // const firstSundayExercises = [91, 92, 93, 121, 34, 35]
+
+    const firstMondayExercises = [1, 3, 4, 5, 6, 7, 8]
+    const firstTuesdayExercises = [9, 10, 11, 12, 13, 14, 15, 16]
+    const firstWednesdayExercises = [32, 33, 34, 35, 36, 37, 38]
+    const firstThursdayExercises = [131]
+    const firstFridayExercises = [17, 18, 19, 20, 21, 22]
+    const firstSaturdayExercises = [24, 25, 9, 26, 27, 15, 16]
+    const firstSundayExercises = [28, 29, 30, 31, 39, 40]
 
 
     UserService.hasUserWithUserName(req.app.get('db'), req.body.user_name)
