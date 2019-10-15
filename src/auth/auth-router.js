@@ -19,21 +19,13 @@ authRouter
       .then(dbUser => {
         if(!dbUser)
           return res.status(400).json({
-<<<<<<< HEAD
             error: 'Incorrect Username or Password'
-=======
-            error: 'Incorrect username or password'
->>>>>>> e2104d286a2e6b4c25d0816ca6ade2a7f2b152a4
           })
         return AuthService.comparePasswords(loginUser.password, dbUser.password)
           .then(compare => {
             if (!compare)
               return res.status(400).json({
-<<<<<<< HEAD
                 error: 'Incorrect Username or Password'
-=======
-                error: 'Incorrect username or password'
->>>>>>> e2104d286a2e6b4c25d0816ca6ade2a7f2b152a4
               })
 
             const subject = dbUser.user_name
