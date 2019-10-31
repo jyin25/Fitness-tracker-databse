@@ -1,8 +1,22 @@
 # Fit Tracker Database
 
-This is the database/server for the Fitness Tracker App
+Live App: https://fitness-tracker.jyin25.now.sh/
 
-https://github.com/jyin25/Fitness-Tracker
+Client Repo: https://github.com/jyin25/Fitness-Tracker
+
+
+## About
+Fit Tracker is a tool that help users keep track of the weights they lift throughout 12 weeks. 
+
+Users have the option to set their own exercises to track or use the preselected exercises. 
+
+
+## Technologies Used:
+
+Front-end: React, HTML/CSS, Javascript
+
+Back-end: Node.js, Express, PostgreSQL
+
 
 ## Scripts
 
