@@ -24,3 +24,33 @@ Start the application `npm start`
 
 Start nodemon for the application `npm run dev`
 
+## POST api/users
+
+
+## GET api/exerciselist
+
+
+## POST /api/login
+
+
+## Get /api/weeks
+
+
+## PATCH /api/insertweights
+
+
+## GET /api/insertweights
+
+
+## GET /api/musclegroup
+
+
+## GET /api/customlist
+
+
+## PATCH /api/customlist
+
+
+## POST /api/customlist
+
+
