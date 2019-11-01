@@ -26,17 +26,20 @@ Start nodemon for the application `npm run dev`
 
 
 ## POST api/users
-```[
+```
+[
   {
     "full_name": String,
     "user_name": String,
     "password": String
   }
-]```
+]
+```
 
 
 ## GET api/exerciselist
-```[
+```
+[
   {
     "id": Number,
     "muscle_name": String,
@@ -47,59 +50,71 @@ Start nodemon for the application `npm run dev`
     "video": String,
     "is_check": boolean
   }
-]```
+]
+```
 
 
 ## POST /api/login
-`[
+```
+[
   {
     "user_name": String,
     "password": String
   }
-]`
+]
+```
 
 
 ## Get /api/weeks
-```[
+```
+[
   {
     "id": Number,
     "week_number": Number
   }
-]```
+]
+```
 
 
 ## PATCH /api/insertweights
-```[
+```
+[
   {
     "max_value": Number,
     "id": Number,
   }
-]```
+]
+```
 
 
 ## GET /api/insertweights
-```[
+```
+[
   {
     "max_value": Number,
     "id": Number,
     "day_name": String,
     "exercise_name": String
   }
-]```
+]
+```
 
 
 ## GET /api/musclegroup
-```[
+```
+[
   {
     "id": Number,
     "muscle_name": String,
     "muscle_pictures": String
   }
-]```
+]
+```
 
 
 ## GET /api/customlist
-```[
+```
+[
   {
     "id": Number,
     "exercise_name": String,
@@ -123,11 +138,13 @@ Start nodemon for the application `npm run dev`
     "max_value_12": Number,
     "max_value_3": Number
   }
-]```
+]
+```
 
 
 ## PATCH /api/customlist
-```[
+```
+[
   {
     "id": Number,
     "max_value_1": Number,
@@ -143,14 +160,17 @@ Start nodemon for the application `npm run dev`
     "max_value_12": Number,
     "max_value_3": Number
   }
-]```
+]
+```
 
 
 ## POST /api/customlist
-```[
+```
+[
   {
     "exercise_id": Number,
   }
-]```
+]
+```
 
 
