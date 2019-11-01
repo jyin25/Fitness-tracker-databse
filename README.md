@@ -24,33 +24,124 @@ Start the application `npm start`
 
 Start nodemon for the application `npm run dev`
 
+
 ## POST api/users
+[
+  {
+    "user_name": String,
+    "password": String
+  }
+]
 
 
 ## GET api/exerciselist
+[
+  {
+    "id": Number,
+    "muscle_name": String,
+    "muscle_pictures": String,
+    "exercise_name": String,
+    "exercise_how_to": String,
+    "muscle_group_id": Number,
+    "video": String,
+    "is_check": boolean
+  }
+]
 
 
 ## POST /api/login
 
 
 ## Get /api/weeks
+[
+  {
+    "id": Number,
+    "week_number": Number
+  }
+]
 
 
 ## PATCH /api/insertweights
+[
+  {
+    "max_value": Number,
+    "id": Number,
+  }
+]
 
 
 ## GET /api/insertweights
+[
+  {
+    "max_value": Number,
+    "id": Number,
+    "day_name": String,
+    "exercise_name": String
+  }
+]
 
 
 ## GET /api/musclegroup
+[
+  {
+    "id": Number,
+    "muscle_name": String,
+    "muscle_pictures": String
+  }
+]
 
 
 ## GET /api/customlist
-
+[
+  {
+    "id": Number,
+    "exercise_name": String,
+    "exercise_how_to": String,
+    "muscle_group_id": Number,
+    "video": String,
+    "is_check": Boolean,
+    "exercise_id": Number,
+    "date_created": String,
+    "user_id": Number,
+    "max_value_1": Number,
+    "max_value_2": Number,
+    "max_value_4": Number,
+    "max_value_5": Number,
+    "max_value_6": Number,
+    "max_value_7": Number,
+    "max_value_8": Number,
+    "max_value_9": Number,
+    "max_value_10": Number,
+    "max_value_11": Number,
+    "max_value_12": Number,
+    "max_value_3": Number
+  }
+]
 
 ## PATCH /api/customlist
-
+[
+  {
+    "id": Number,
+    "max_value_1": Number,
+    "max_value_2": Number,
+    "max_value_4": Number,
+    "max_value_5": Number,
+    "max_value_6": Number,
+    "max_value_7": Number,
+    "max_value_8": Number,
+    "max_value_9": Number,
+    "max_value_10": Number,
+    "max_value_11": Number,
+    "max_value_12": Number,
+    "max_value_3": Number
+  }
+]
 
 ## POST /api/customlist
+[
+  {
+    "exercise_id": Number,
+  }
+]
 
 
