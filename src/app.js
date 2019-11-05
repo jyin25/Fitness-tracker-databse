@@ -28,7 +28,6 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/users', userRouter)
-app.use('/api/exerciselist', exerciseRouter)
 app.use('/api/login', authRouter)
 app.use('/api/weeks', weeksRouter)
 app.use('/api/insertweights', weightsRouter)
