@@ -1,17 +1,22 @@
-# Express Boilerplate!
+# Fit Tracker Database
 
-This is a boilerplate project used for starting new projects!
+Live App: https://fitness-tracker.jyin25.now.sh/
 
-## Set up
+Client Repo: https://github.com/jyin25/Fitness-Tracker
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+## About
+Fit Tracker is a tool that help users keep track of the weights they lift throughout 12 weeks. 
+
+Users have the option to set their own exercises to track or use the preselected exercises. 
+
+
+## Technologies Used:
+
+Front-end: React, HTML/CSS, Javascript
+
+Back-end: Node.js, Express, PostgreSQL
+
 
 ## Scripts
 
@@ -19,8 +24,153 @@ Start the application `npm start`
 
 Start nodemon for the application `npm run dev`
 
-Run the tests `npm test`
 
-## Deploying
+## POST api/users
+```
+[
+  {
+    "full_name": String,
+    "user_name": String,
+    "password": String
+  }
+]
+```
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+
+## GET api/exerciselist
+```
+[
+  {
+    "id": Number,
+    "muscle_name": String,
+    "muscle_pictures": String,
+    "exercise_name": String,
+    "exercise_how_to": String,
+    "muscle_group_id": Number,
+    "video": String,
+    "is_check": boolean
+  }
+]
+```
+
+
+## POST /api/login
+```
+[
+  {
+    "user_name": String,
+    "password": String
+  }
+]
+```
+
+
+## Get /api/weeks
+```
+[
+  {
+    "id": Number,
+    "week_number": Number
+  }
+]
+```
+
+
+## PATCH /api/insertweights
+```
+[
+  {
+    "max_value": Number,
+    "id": Number,
+  }
+]
+```
+
+
+## GET /api/insertweights
+```
+[
+  {
+    "max_value": Number,
+    "id": Number,
+    "day_name": String,
+    "exercise_name": String
+  }
+]
+```
+
+
+## GET /api/musclegroup
+```
+[
+  {
+    "id": Number,
+    "muscle_name": String,
+    "muscle_pictures": String
+  }
+]
+```
+
+
+## GET /api/customlist
+```
+[
+  {
+    "id": Number,
+    "exercise_name": String,
+    "exercise_how_to": String,
+    "muscle_group_id": Number,
+    "video": String,
+    "is_check": Boolean,
+    "exercise_id": Number,
+    "date_created": String,
+    "user_id": Number,
+    "max_value_1": Number,
+    "max_value_2": Number,
+    "max_value_4": Number,
+    "max_value_5": Number,
+    "max_value_6": Number,
+    "max_value_7": Number,
+    "max_value_8": Number,
+    "max_value_9": Number,
+    "max_value_10": Number,
+    "max_value_11": Number,
+    "max_value_12": Number,
+    "max_value_3": Number
+  }
+]
+```
+
+
+## PATCH /api/customlist
+```
+[
+  {
+    "id": Number,
+    "max_value_1": Number,
+    "max_value_2": Number,
+    "max_value_4": Number,
+    "max_value_5": Number,
+    "max_value_6": Number,
+    "max_value_7": Number,
+    "max_value_8": Number,
+    "max_value_9": Number,
+    "max_value_10": Number,
+    "max_value_11": Number,
+    "max_value_12": Number,
+    "max_value_3": Number
+  }
+]
+```
+
+
+## POST /api/customlist
+```
+[
+  {
+    "exercise_id": Number,
+  }
+]
+```
+
+
