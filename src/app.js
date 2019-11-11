@@ -6,7 +6,6 @@ const cors = require('cors');
 const helmet = require('helmet');
 const { NODE_ENV } = require('./config')
 const userRouter = require('./users/users-router')
-const exerciseRouter = require('./exercises/exercises-router')
 const authRouter = require('./auth/auth-router')
 const weeksRouter = require('./weeks/weeks_route')
 const weightsRouter = require('./saveWeights/weights-router')

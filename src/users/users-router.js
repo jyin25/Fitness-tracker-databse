@@ -7,7 +7,6 @@ const jsonBodyParser = express.json()
 
 userRouter
   .post('/', jsonBodyParser, (req, res, next) => {
-    console.log(req.body)
     const {full_name, user_name, password} = req.body
 
     if(!req.body.full_name)
@@ -70,7 +69,6 @@ userRouter
             const userWeeks = weeks.map(data => ({week_number: data, userid: id}))
             return UserService.insertWeeks(req.app.get('db'), userWeeks)
               .then(weeks => {
-                console.log(weeks)
                 const weekDays = weeks.map(data => {
                   return days.map(daysData => ({day_name: daysData, weekid: data.id}))
                 })
