@@ -37,4 +37,14 @@ customListRouter
       .then(data => res.json(data))
   })
 
+customListRouter
+  .route('/:id')
+  .all(requireAuth)
+  .delete((req, res, next) => {
+    const id = req.params.id
+    CustomListServices.deleteWorkout(req.app.get('db'), id)
+      .then(data => res.status(204).end())
+  })
+  .catch(next)
+
 module.exports = customListRouter

@@ -30,6 +30,11 @@ const CustomListServices = {
       .update({max_value_11})
       .update({max_value_12})
       .then(data => data)  
+  },
+  deleteWorkout(db, id) {
+    return db('custom_list')
+      .where({id})
+      .delete()
   }
 }
 
