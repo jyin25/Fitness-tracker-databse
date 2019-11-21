@@ -1,6 +1,6 @@
 # Fit Tracker Database
 
-Live App: https://fitness-tracker.jyin25.now.sh/
+Live App: https://fitness-tracker-master.jyin25.now.sh
 
 Client Repo: https://github.com/jyin25/Fitness-Tracker
 
